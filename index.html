@@ -1,0 +1,60 @@
+<div class="box">
+    <div class="inner">
+
+        <a class="link-1" href="home.html" target="_blank">
+            Главная
+        </a>
+        <a class="link-1" href="invite.html" target="_blank">
+            Команда
+        </a>
+
+    </div>
+</div>
+<style>
+    body{
+        background-color: #333;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Arial';
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link-1 {
+        font-size: 30px;
+        line-height: 35px;
+        position: relative;
+    }
+
+    .link-1::before {
+        content: "";
+        width: 0%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #1cbec8;
+        transition: width 0.30s;
+    }
+
+    .link-1:hover::before {
+        width: 100%;
+    }
+
+    .link-1:not(:first-child) {
+        margin-top: 50px;
+    }
+</style>
